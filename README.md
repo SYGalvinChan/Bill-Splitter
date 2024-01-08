@@ -18,14 +18,14 @@ After the party, the bot will calculate who to pay how much to who.
 
 ## Commands
 
-`/start` - start a session
+- `/start` - start a session
 
-`/adduser` - add a user to the session
-`/deleteuser` - delete a user in the session
-`/listuser` - list all users in the session
+- `/adduser` - add a user to the session
+- `/deleteuser` - delete a user in the session
+- `/listuser` - list all users in the session
 
-`/additem` - add an item into the expense tracker | usage: /additem [item_price] [item_name]
-`/deleteitem` - delete an item in the expense tracker
-`/listitems` - list all items in the expense tracker
+- `/additem` - add an item into the expense tracker | usage: `/additem [item_price] [item_name]`
+- `/deleteitem` - delete an item in the expense tracker
+- `/listitems` - list all items in the expense tracker
 
-`/finish` - split total expenses equally among all users in the session
+- `/finish` - split total expenses equally among all users in the session
