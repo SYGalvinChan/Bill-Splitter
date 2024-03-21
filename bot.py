@@ -1,3 +1,5 @@
+import sys
+
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, ConversationHandler, CallbackContext, Filters
 from helper import split, additem_parse, condense_expenses, is_number
@@ -228,8 +230,8 @@ def cancel(update: Update, context: CallbackContext):
     send_error(update, context, 'The operation has been cancelled')
     return ConversationHandler.END
 
-token_file = open("token.txt", "r")
-token = token_file.read()
+
+token = sys.argv[1]
 updater = Updater(token=token, use_context=True)
 dispatcher = updater.dispatcher
 
